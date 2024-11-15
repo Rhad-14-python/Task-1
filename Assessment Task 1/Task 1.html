@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @font-face{
+                font-family:ProtestGuirrilla;
+                src:url(ProtestGuerrilla-Regular.ttf) format(truetype);
+            }
+            @font-face{
+                font-family: JosefinSans;
+                src:url(JosefinSans-VariableFont_wght.ttf) format(truetype);
+            }
+            body{
+                background-color: #e9e9e9;
+                font-family:"JosefinSans"
+            }
+            a {
+                color:black;
+                text-decoration: none;
+            }
+            .header{
+                text-align: center;
+            }
+            .logo img{
+                width:200px;
+                height:auto;
+            }
+            .box{
+                background-color: white;
+            }
+            .hd1{
+                text-align: center;
+                font-family:"ProtestGuirrilla", sans-serif;
+            }
+            .hd{
+                text-align: center;
+                font-family:"ProtestGuirrilla", sans-serif;
+            }
+            .pictures{
+              text-align: center;
+              display: block;
+              width:100%;
+              height:auto;
+            }
+            img{
+                width:100%;
+            }
+            .profile {
+              width: 100%; 
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: 0 auto;
+            }
+            .profile img {
+              border-radius: 50%;
+              width: 200px;
+              height: auto;
+            }
+            .footersec{
+                text-align: center;
+                background-color: #14181d;
+                color: white;
+                
+            }
+            
+           
+            @media only screen and (min-width:360px)and (max-width:540px){
+            nav a {
+                padding : 0 12px;
+            }
+            .box{
+                padding: 12px;
+                margin: 12px;
+            }
+            .logo img {
+                width: 80px;
+                height: auto;
+                margin-bottom: 12px;
+            }
+            .pictures img{
+                max-width:100%;
+               
+            }
+            .profile img{
+                border-radius: 50%;
+                width:200px;
+                height:auto;
+                margin-top: 12px;
+            }
+            .footersec{
+                padding:12px;
+               
+            }
+        
+            .extra-image {
+                display: none!important; 
+            }
+        }
+
+        @media only screen and (min-width:540px)and (max-width:720px){
+            nav a{
+                padding : 0 20px;
+            }
+            .box{
+                padding:20px;
+                margin:20px;
+                }
+            
+            .logo img {
+                width: 80px;
+                height: auto;
+                margin-bottom: 20px;
+            }
+            .pictures img{
+                width:100%;
+                height: auto;
+            }
+            .profile img{
+                border-radius: 50%;
+                width:200px;
+                height:auto;
+                margin-top: 20px;
+            }
+            .footersec{
+                padding:20px;
+            }
+            .extra-image {
+             display: none!important; 
+            }
+        }
+         
+            @media only screen and (min-width:720px)and (max-width:1024px){
+            nav a {
+                padding : 0 30px;
+            }
+            .box{
+                margin:30px;
+                padding:30px;
+            }
+            .logo img{
+                width: 80px;
+                height: auto;
+                margin-bottom: 30px;
+            }
+            .pictures{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap:20px;
+            }
+            .pictures img{
+                width: 100%;
+                text-align: center;
+                margin-bottom: 0;
+            }
+            .author-container{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 30px;
+                flex-direction: row-reverse;
+            }
+            .author-text{
+                flex:1;
+                text-align: left;
+                margin-right: 20px;
+            }
+            .profile{
+                margin-left: 20px;
+                margin-right: 20px;
+                max-width: 30%;
+            }
+            .profile img{
+                border-radius:50%;
+                width:200px;
+                height:auto;
+            }
+            .footersec{
+                padding:30px;
+               
+            }
+            .extra-image {
+                display: none!important 
+            }
+        }
+        @media only screen and (min-width:1024px){
+            
+            nav a{
+                padding:0 50px;
+            }
+            .logo img{
+                width: 200px;
+                height: auto;
+                margin-bottom: 50px;
+            }
+            .hd1{
+                font-size: 50px;
+                text-align: center;
+                font-family:"ProtestGuirrilla", sans-serif;
+            }
+            .box{
+                padding:50px;
+                margin:50px;
+            }
+            .text1 h1{
+                text-align:left;
+                padding-right: 50px;
+            }
+            .text1 p{
+                width:70%;
+            }
+            .text-container{
+                align-items: left;
+                column-count: 3;
+                column-width: 3fr;
+                column-gap:30px;
+                padding:30px;
+            }
+           
+            .extra-image {
+              display: block!important; 
+              width:50%;
+            }
+           .blah-container{
+            width:40%;
+            display: flex; 
+            flex-direction: row; 
+            align-items: flex-start; 
+           }
+           .pictures{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            grid-template-rows: 2, auto;
+            flex: 1;
+            width:50%; 
+           }
+            .author-container{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 30px;
+                flex-direction: row-reverse;
+            }
+            .author-text{
+                flex:1;
+                text-align: left; 
+            }
+            
+            .blah-container{
+              display: grid;
+              grid-template-columns: auto auto;
+            }
+            .pic0{
+                width:100%;
+                float:left;
+            }
+            .pic1{
+                width:100%
+                
+            }
+            .profile{
+                margin-left: 50px;
+                margin-right: 50px;
+                max-width:30%;
+            }
+            .profile img{
+                border-radius:50%;
+                width:200px;
+                height: 200px;
+                height:auto;
+            }
+            .footersec{
+                padding:50px;
+            }
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="logo">
+                <img src="logo.svg" alt="logo">
+            </div>
+                <nav>
+                    <a href="Task 1.html">Our Blog</a>
+                    <a href="Task 1.html">Our Artist</a>
+                    <a href="Task 1.html">Our Story</a>
+                </nav>
+        </header>
+        <div class="box">
+                <div class="text1">
+                   <h1 class="hd1">Erased Tapes:</h1>
+            <h1 class="hd">Exploring the Sonic Frontier</h1>
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Mi eu scelerisque turpis posuere tempor? 
+               Leo condimentum himenaeos molestie elit; maximus iaculis proin nulla. 
+               Ullamcorper nibh cras conubia suscipit dapibus sagittis, facilisi habitant vivamus.
+               Etiam fusce posuere himenaeos ipsum commodo sollicitudin himenaeos nec.
+            </p>
+           </div>
+           
+           
+        <div class="text-container">
+        
+           
+            <h1 class="hd">Heading</h1>
+               <p>Montes ridiculus mus tellus nunc vulputate. Cras facilisi congue et facilisis porttitor litora etiam praesent porttitor. Sollicitudin cubilia scelerisque diam taciti lacus. Dapibus penatibus augue dapibus sagittis; rhoncus accumsan. Accumsan urna et, ultrices placerat justo rutrum. Tristique mattis ante cras accumsan convallis phasellus fermentum magna. Rhoncus curabitur pharetra proin ante nam adipiscing accumsan hac. Rutrum efficitur nullam integer ut ex id. Pulvinar vel at vestibulum vivamus sed nascetur eget.
+                Laoreet volutpat hendrerit est aliquam; fusce quam tempor. Nisi interdum praesent pellentesque non non blandit cubilia et. Aptent maximus vehicula nullam odio tempor. Placerat dis facilisis potenti iaculis, primis vivamus nec at magnis. Aadipiscing curabitur vestibulum imperdiet dolor primis. Inceptos penatibus inceptos eu habitasse aptent vehicula platea litora congue. Ultricies mauris fringilla rhoncus pharetra iaculis vitae. Venenatis himenaeos eget molestie dignissim consectetur tellus litora. Porta a iaculis mi primis rhoncus.
+                Curae habitasse elementum amet nunc, natoque at. Tortor vel blandit sociosqu auctor aliquam maximus porta feugiat. Eros phasellus platea mauris condimentum natoque hendrerit tellus id. Ex imperdiet vitae maximus adipiscing neque quam tempor orci. Lobortis porta lacinia cubilia tellus vel placerat; facilisis mi euismod. Neque eu orci nulla penatibus elit nec.
+                Parturient habitasse facilisis purus donec, enim platea maximus. Primis class varius augue sed class ultricies. Posuere curabitur tristique penatibus montes hac ac imperdiet. Risus per sociosqu, cursus leo condimentum ac fringilla. Nibh curabitur eros tempus nec; nam curae hendrerit. Mattis placerat maximus mollis praesent, eros adipiscing dui.
+               </p>
+          
+        
+       
+        
+            
+                <h1 class="hd">Heading</h1>
+                <p>Habitasse ornare fames facilisis montes pulvinar habitasse fringilla. Risus porta cursus duis vivamus quam adipiscing nec. Ante at posuere eget aptent natoque vivamus ante. Aenean enim dapibus viverra sem efficitur. Felis nam semper integer justo in. Facilisi augue urna torquent lacinia facilisi inceptos. Natoque varius feugiat massa scelerisque natoque, cras tempor inceptos.                    
+                    Amet ac leo, imperdiet hac litora auctor. Suscipit congue duis sociosqu auctor euismod vivamus urna diam. Nunc enim himenaeos litora facilisi, tincidunt torquent. Eros sapien laoreet duis, volutpat rutrum pulvinar. Natoque semper sapien aptent quis habitant aliquam condimentum luctus. Tempus pellentesque congue varius dapibus pharetra. Fermentum diam auctor bibendum rhoncus leo. Vestibulum tincidunt fames convallis ligula semper porttitor.
+                    Magnis maximus morbi, litora accumsan vivamus facilisi etiam pharetra. Platea congue orci sagittis purus scelerisque. Velit taciti maecenas praesent nam lobortis metus vehicula habitasse porttitor. Porta gravida placerat lobortis litora elit feugiat venenatis. Cras magna himenaeos consequat aliquet ad nec pharetra. Ligula eleifend imperdiet aptent primis placerat. Nec magnis tempus vulputate ipsum ad sagittis mus.
+                </p>
+            
+    
+                
+                <h1 class="hd">Heading</h1>
+                <p>
+                    Vulputate nullam tempus montes eu tellus integer adipiscing pulvinar. Pharetra eu luctus id a potenti. Pulvinar egestas conubia ante varius lobortis iaculis metus. Netus sem imperdiet hendrerit vehicula netus est gravida tortor. Nunc ridiculus per montes nulla, facilisis lacinia per leo. Hendrerit scelerisque nulla in suspendisse sit tortor sagittis. Suscipit dictumst ipsum laoreet cras egestas suscipit orci. Per molestie felis erat platea blandit commodo.
+                    Ad venenatis sapien habitant posuere donec porttitor vel nisi. Sodales laoreet donec diam rhoncus lectus euismod orci torquent curae. Fames rhoncus torquent sed convallis; potenti cras. Dictumst arcu libero nulla malesuada mi ridiculus platea. Interdum ullamcorper fringilla himenaeos mollis; in arcu pharetra massa. Nunc mauris taciti montes sapien molestie orci ac quis.
+                </p>
+            </div>
+               <div clas="blah-container">                                              
+            <div class="extra-container">
+                <div class="extra-image">
+                    <img src="eulogy-for-evolution.jpg" alt="eulogy-for-evolution" class="pic0">
+                </div>
+            </div>
+
+        <div class="pictures">
+            <img src="encores-2.jpg" alt="encore" class="pic1">
+            <img src="blurred.jpg" alt="blur" class="pic1">
+            <img src="articulation.jpg" alt="articulation" class="pic1">
+            <img src="all-encores.jpg" alt="all-encore" class="pic1">
+        </div>
+               </div>  
+                          
+
+        <div class="author-container">
+            <div class="profile">
+                <img src="profile_picture.jpg" alt="profile">
+            </div>
+            <div class="author-text">
+            <h2 class="hd">The Author</h2>
+            <div class="contents">
+            <p>
+                Sapien leo scelerisque per convallis torquent nunc. Lobortis eleifend a nam sit turpis nostra. Tempus suspendisse libero curae faucibus lobortis litora bibendum praesent! Eget quam magna, diam commodo interdum sapien magnis.
+            </p>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+        
+                <footer>
+                    <div class="footersec">
+                Copyright © 2023 Erased Disks Ltd.
+                    </div>
+                </footer>
+            
+    </body>
+</html>
